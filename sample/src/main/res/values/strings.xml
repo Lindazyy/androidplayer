@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExoPlayerFilter</string>
+    <string name="play">play</string>
+    <string name="changeUrl">changeUrl</string>
+    <string name="pause">pause</string>
+    <string name="locked">锁定镜头</string>
+    <string name="unlocked">已解锁</string>
+    <string name="info">点击圆点和箭头icon切换视角</string>
+</resources>

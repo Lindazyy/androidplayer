@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.daasuu.exoplayerfilter.MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/viewBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:layout_marginStart="1dp"-->
+<!--        android:layout_marginTop="1dp" />-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:visibility="invisible"-->
+<!--        android:layout_weight="1" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:text="@string/pause"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <EditText
+            android:id="@+id/videoAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:text="https://storage.3d.dgene.com/temp_multiViews/49779960b5a8e37d6f701ab70e2e19d5.mp4"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
