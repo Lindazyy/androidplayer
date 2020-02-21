@@ -124,7 +124,7 @@ public class PlayerActivity extends AppCompatActivity implements QuardGridFilter
 
         Intent intent=getIntent();  // 获取上一个活动传入的实例
         String data=intent.getStringExtra("send");  // 获取数据
-        data = "https://storage.3d.dgene.com/temp_multiViews/49779960b5a8e37d6f701ab70e2e19d5.mp4";
+        //data = "https://storage.3d.dgene.com/temp_multiViews/49779960b5a8e37d6f701ab70e2e19d5.mp4";
 
         if(data!=null) startPlay(data, videoRows, videoCols);
 
@@ -171,10 +171,10 @@ public class PlayerActivity extends AppCompatActivity implements QuardGridFilter
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if(ePlayerView!=null) stopPlay();
-//                Intent intent = new Intent();
-//                intent.setClass(PlayerActivity.this,MainActivity.class);
-//                startActivity(intent);
+                if(ePlayerView!=null) stopPlay();
+                Intent intent = new Intent();
+                intent.setClass(PlayerActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
         startBtn = findViewById(R.id.btn_start);
@@ -231,23 +231,23 @@ public class PlayerActivity extends AppCompatActivity implements QuardGridFilter
             public void onClick(View v) {
                 ePlayerView.isClicked = 2;
 
-//                new Thread() {//创建子线程进行网络访问的操作
-//                    public void run() {
-//                        try {
-//                            if(onePieceList.size()!=0) onePieceList.clear();
-//                            slist = getJSONObject(path);
-//                            handler.sendEmptyMessage(0);
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                }.start();
-//                if(list_visiable){
-//                    setInvisiable();
-//                    listLayout.setVisibility(View.VISIBLE);
-//                    listLayout.setAlpha(1);
-//                }
-//                list_visiable = !list_visiable;
+                new Thread() {//创建子线程进行网络访问的操作
+                    public void run() {
+                        try {
+                            if(onePieceList.size()!=0) onePieceList.clear();
+                            slist = getJSONObject(path);
+                            handler.sendEmptyMessage(0);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }.start();
+                if(list_visiable){
+                    setInvisiable();
+                    listLayout.setVisibility(View.VISIBLE);
+                    listLayout.setAlpha(1);
+                }
+                list_visiable = !list_visiable;
             }
         });
         angleBtn = findViewById(R.id.btn_angle);
