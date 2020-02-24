@@ -1,3 +1,12 @@
+/*
+*
+* This class creates a transparent surface cover on the
+* video layout, which is used to draw the human skeleton
+*
+* by Gang Wang
+* */
+
+
 package com.daasuu.exoplayerfilter;
 
 import android.Manifest;

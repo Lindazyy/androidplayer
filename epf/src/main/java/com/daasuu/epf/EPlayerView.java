@@ -1,3 +1,10 @@
+/*
+* video player module
+* the two changed files are "EPlayerView.java" and "EFrameBufferObjectRender.java"
+* EPlayerView.java --- on touch events
+* EFrameBufferObjectRender.java --- Screen size adaptation
+* */
+
 package com.daasuu.epf;
 
 import android.content.Context;

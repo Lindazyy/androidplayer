@@ -1,3 +1,11 @@
+/*
+* video activity
+* play video link from main activity, get video list from json object
+*
+* by Linda Chow
+*
+* */
+
 package com.daasuu.exoplayerfilter;
 
 import androidx.annotation.NonNull;
@@ -33,7 +41,6 @@ import android.widget.Toast;
 
 import com.daasuu.epf.EPlayerView;
 import com.daasuu.epf.callbacks.QuardGridFilterCallback;
-import com.dgene.mylibrary.NumberProgressBar;
 import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.source.MediaSource;
@@ -130,7 +137,7 @@ public class PlayerActivity extends AppCompatActivity implements QuardGridFilter
 
     }
 
-
+    //init views and request permissions
     @RequiresApi(api = Build.VERSION_CODES.M)
     void init(){
         if (ContextCompat.checkSelfPermission(this,

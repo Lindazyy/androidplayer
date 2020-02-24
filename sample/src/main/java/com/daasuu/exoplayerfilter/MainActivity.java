@@ -51,17 +51,16 @@ public class MainActivity extends AppCompatActivity{
     private void setUpViews() {
 
         editText = (EditText)findViewById(R.id.videoAddress);
-
         startBtn = (Button) findViewById(R.id.btnStart);
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, PlayerActivity.class);
-            //intent.putExtra("send","http://live.360.plex-vr.com/live/index.m3u8");
-            intent.putExtra("send",editText.getText().toString());
-            //intent.putExtra("send",Environment.getExternalStorageDirectory().toString()+"/DCIM/test.mp4");
-            intent.setClass(MainActivity.this,PlayerActivity.class);
-            startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, PlayerActivity.class);
+                //intent.putExtra("send","http://live.360.plex-vr.com/live/index.m3u8");
+                intent.putExtra("send",editText.getText().toString());
+                //intent.putExtra("send",Environment.getExternalStorageDirectory().toString()+"/DCIM/test.mp4");
+                intent.setClass(MainActivity.this,PlayerActivity.class);
+                startActivity(intent);
             }
         });
     }

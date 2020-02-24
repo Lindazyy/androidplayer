@@ -60,6 +60,7 @@ abstract class EFrameBufferObjectRenderer implements GLSurfaceView.Renderer {
             }
         }
 
+        //Screen size adaptation
         int screenWidth = EPlayerView.screenwidth; int screenHeight = EPlayerView.screenheight;
         int renderWidth, renderHeight, x0, y0, canvasWidth, canvasHeight;
 

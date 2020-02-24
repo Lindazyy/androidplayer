@@ -1,3 +1,10 @@
+/*
+* This class is used to form a layout which changes
+* while switching perspective
+*
+* by Pengfei Mou
+* */
+
 package com.daasuu.exoplayerfilter;
 
 import android.content.Context;
